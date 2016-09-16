@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "car_service_db");
+$mysqli = new mysqli("localhost", "root", "", "forum_db");
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" .
         $mysqli->connect_errno . ") " .
