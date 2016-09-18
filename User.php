@@ -2,7 +2,7 @@
 include_once './DBconnect.php';
 
 class User {
-
+    
     private $first_name = null;
     private $last_name = null;
     private $username = null;
@@ -28,10 +28,7 @@ class User {
         try {
             if ($mysqli->query($sql) === false) {
                 throw new Exception('Wrong SQL: ' . $sql . ' Error: ' . $mysqli->error, E_USER_ERROR);
-                //    trigger_error('Wrong SQL: ' . $sql . ' Error: ' . $mysqli->error, E_USER_ERROR);
             } else {
-             //   $last_inserted_id = $mysqli->insert_id;
-                //    echo "User with username $username, ID $last_inserted_id and role $role created";             
                 $_SESSION['user'] = $username;
                 header('Location: registered.php');
                 exit;
