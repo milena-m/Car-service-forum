@@ -16,7 +16,9 @@ include_once './DBconnect.php';
         <div class="container">
         <button class="btn" onclick="location.href = 'logout.php';">Logout</button><br/>
         <h2> Profile page of <?php echo $_SESSION['user']; ?></h2>
-        
+        <?php
+        // To be written
+        ?>
     </p>     
     <button class="btn" onclick="location.href = 'forum_page.php';">Forum</button><br/><br/>
     </div>
